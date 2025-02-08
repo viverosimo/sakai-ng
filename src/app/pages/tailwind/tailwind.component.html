@@ -1,0 +1,52 @@
+<div class="bg-white p-6 rounded-lg shadow-lg w-full">
+    <h2 class="text-2xl font-semibold text-gray-700 text-center mb-4">Customer Form</h2>
+    <form action="#" method="POST">
+        <!-- Personal Details -->
+        <app-fieldset title="Personal Details">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <label class="labelClass">Full Name</label>
+                    <input type="text" pInputText placeholder="Enter name" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">Email</label>
+                    <input pInputText type="email" placeholder="Enter email" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">Phone</label>
+                    <input pInputText type="tel" placeholder="Enter phone" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">Date of Birth</label>
+                    <p-date-picker dateFormat="mm/dd/yy" showIcon="true" styleClass="w-full"></p-date-picker>
+                </div>
+            </div>
+        </app-fieldset>
+
+        <!-- Address Details -->
+        <fieldset class="border border-gray-300 rounded-lg p-4 mb-4">
+            <legend class="text-lg font-semibold text-gray-600 px-2">Address Details</legend>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="labelClass">Street</label>
+                    <input pInputText type="text" placeholder="Enter street" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">City</label>
+                    <input pInputText type="text" placeholder="Enter city" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">State</label>
+                    <input pInputText type="text" placeholder="Enter state" class="w-full" />
+                </div>
+                <div>
+                    <label class="labelClass">ZIP Code</label>
+                    <input pInputText type="text" placeholder="Enter ZIP code" class="w-full" />
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">Submit</button>
+    </form>
+</div>

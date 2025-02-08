@@ -10,7 +10,7 @@ export const appRoutes: Routes = [
         component: AppLayout,
         children: [
             { path: '', component: Dashboard },
-            { path: 'pages', loadChildren: () => import('./app/pages/pages.routes') }
+            { path: 'pages', loadChildren: () => import('./app/pages/pages.routes').then((m) => m.pagesRoutes) }
         ]
     },
     { path: 'landing', component: Landing },

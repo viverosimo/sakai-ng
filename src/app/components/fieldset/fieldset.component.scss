@@ -1,0 +1,7 @@
+.fieldset {
+    @apply border border-gray-300 rounded-lg p-4 mb-4;
+}
+
+.legend {
+    @apply text-lg font-semibold text-gray-600 px-2;
+}
