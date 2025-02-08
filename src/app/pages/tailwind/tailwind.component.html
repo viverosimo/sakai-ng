@@ -3,9 +3,9 @@
     <form action="#" method="POST">
         <!-- Personal Details -->
         <app-fieldset title="Personal Details">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div>
-                    <label class="labelClass">Full Name</label>
+                    <label class="labelClass">Ονοματεπώνυμο</label>
                     <input type="text" pInputText placeholder="Enter name" class="w-full" />
                 </div>
                 <div>
@@ -18,7 +18,7 @@
                 </div>
                 <div>
                     <label class="labelClass">Date of Birth</label>
-                    <p-date-picker dateFormat="mm/dd/yy" showIcon="true" styleClass="w-full"></p-date-picker>
+                    <p-date-picker dateFormat="dd/mm/yy" showIcon="true" styleClass="w-full"></p-date-picker>
                 </div>
             </div>
         </app-fieldset>
@@ -47,6 +47,7 @@
         </fieldset>
 
         <!-- Submit Button -->
-        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">Submit</button>
+        <app-footer-buttons></app-footer-buttons>
+        <!-- <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">Submit</button> -->
     </form>
 </div>
