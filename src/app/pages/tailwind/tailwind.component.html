@@ -1,8 +1,9 @@
+<p-toast />
 <div class="bg-white p-6 rounded-lg shadow-lg w-full">
     <h2 class="text-2xl font-semibold text-gray-700 text-center mb-4">Customer Form</h2>
     <form action="#" method="POST">
         <!-- Personal Details -->
-        <app-fieldset title="Personal Details">
+        <app-fieldset title="Προσωπικές πληροφορίες">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div>
                     <label class="labelClass">Ονοματεπώνυμο</label>
@@ -24,8 +25,7 @@
         </app-fieldset>
 
         <!-- Address Details -->
-        <fieldset class="border border-gray-300 rounded-lg p-4 mb-4">
-            <legend class="text-lg font-semibold text-gray-600 px-2">Address Details</legend>
+        <app-fieldset title="Address Details">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
                     <label class="labelClass">Street</label>
@@ -43,8 +43,12 @@
                     <label class="labelClass">ZIP Code</label>
                     <input pInputText type="text" placeholder="Enter ZIP code" class="w-full" />
                 </div>
+                <div>
+                    <label class="labelClass">Country</label>
+                    <p-select [options]="countries" placeholder="Select a country" class="w-full"> </p-select>
+                </div>
             </div>
-        </fieldset>
+        </app-fieldset>
 
         <!-- Submit Button -->
         <app-footer-buttons></app-footer-buttons>

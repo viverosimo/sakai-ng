@@ -11,6 +11,12 @@ module.exports = {
             lg: '992px',
             xl: '1200px',
             '2xl': '1920px'
+        },
+        fontFamily: {
+            sans: ['"Open Sans"', 'sans-serif'],
+            serif: ['"Open Sans"', 'serif'],
+            mono: ['"Open Sans"', 'monospace'],
+            roboto: ['"Roboto"', 'sans-serif']
         }
     }
 };
